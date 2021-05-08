@@ -1,0 +1,46 @@
+class A:
+    def m1(self,a,b):
+        return a+b
+    def m2(self,a,b):
+        return a-b
+obj=A()
+s=obj.m1(10,5)
+d=obj.m2(10,5)
+print(s)
+print(d)
+m=obj.m1(s,d)
+print(m)      
+
+ @override
+
+class A:
+    def m1(self,a,b):
+        return a+b
+    def m2(self,a,b):
+        return a-b
+    def m3(self,a,b):
+        return a*b
+
+class B(A):
+    def m1(self,a,b):
+        return a+b+10
+
+obj1=A()
+obj2=B()
+s=obj1.m1(10,5)
+print(s)        
+
+
+
+
+def function(a):
+    result = 0
+    for i in range(a):
+        result = result + i+1
+
+    return result
+
+
+result=function(4)
+print(result)
+ 
